@@ -11,6 +11,7 @@
   inputs.src-norx-master.ref   = "refs/heads/master";
   inputs.src-norx-master.owner = "gokr";
   inputs.src-norx-master.repo  = "norx";
+  inputs.src-norx-master.dir   = "";
   inputs.src-norx-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
