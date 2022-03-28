@@ -13,13 +13,13 @@
   inputs.src-norx-0_4_3.repo  = "norx";
   inputs.src-norx-0_4_3.type  = "github";
   
-  inputs."github.com/yglukhov/android".owner = "nim-nix-pkgs";
-  inputs."github.com/yglukhov/android".ref   = "master";
-  inputs."github.com/yglukhov/android".repo  = "github.com/yglukhov/android";
-  inputs."github.com/yglukhov/android".dir   = "";
-  inputs."github.com/yglukhov/android".type  = "github";
-  inputs."github.com/yglukhov/android".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."github.com/yglukhov/android".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."github-yglukhov-android".owner = "nim-nix-pkgs";
+  inputs."github-yglukhov-android".ref   = "master";
+  inputs."github-yglukhov-android".repo  = "github-yglukhov-android";
+  inputs."github-yglukhov-android".dir   = "master";
+  inputs."github-yglukhov-android".type  = "github";
+  inputs."github-yglukhov-android".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-yglukhov-android".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
