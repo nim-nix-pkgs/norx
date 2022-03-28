@@ -11,7 +11,6 @@
   inputs.src-norx-0_4_2.ref   = "refs/tags/0.4.2";
   inputs.src-norx-0_4_2.owner = "gokr";
   inputs.src-norx-0_4_2.repo  = "norx";
-  inputs.src-norx-0_4_2.dir   = "";
   inputs.src-norx-0_4_2.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

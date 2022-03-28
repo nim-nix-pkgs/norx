@@ -11,8 +11,15 @@
   inputs.src-norx-0_4_3.ref   = "refs/tags/0.4.3";
   inputs.src-norx-0_4_3.owner = "gokr";
   inputs.src-norx-0_4_3.repo  = "norx";
-  inputs.src-norx-0_4_3.dir   = "";
   inputs.src-norx-0_4_3.type  = "github";
+  
+  inputs."github.com/yglukhov/android".owner = "nim-nix-pkgs";
+  inputs."github.com/yglukhov/android".ref   = "master";
+  inputs."github.com/yglukhov/android".repo  = "github.com/yglukhov/android";
+  inputs."github.com/yglukhov/android".dir   = "";
+  inputs."github.com/yglukhov/android".type  = "github";
+  inputs."github.com/yglukhov/android".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/yglukhov/android".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
